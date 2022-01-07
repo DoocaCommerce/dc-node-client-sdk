@@ -1,7 +1,6 @@
-import { config } from 'dotenv'
-import path from 'path'
 import { DoocaClient } from '../../../DoocaClient'
-import { QueryBrandRequest } from '../QueryBrandRequest'
+import { BrandGetRequest } from '../'
+import { BrandListRequest } from '../BrandListRequest'
 
 describe('Brands Requests', () => {
     let client: DoocaClient
@@ -13,8 +12,13 @@ describe('Brands Requests', () => {
         })
     })
 
-    test('Query Brand', async () => {
-        const res = await client.send(new QueryBrandRequest({ id: 2538 }))
+    test('Get Brand', async () => {
+        const res = await client.send(new BrandGetRequest({ id: 2538 }))
+        expect(res.getStatusCode()).toBe(200)
+    })
+
+    test('List Brands', async () => {
+        const res = await client.send(new BrandListRequest())
         expect(res.getStatusCode()).toBe(200)
     })
 })

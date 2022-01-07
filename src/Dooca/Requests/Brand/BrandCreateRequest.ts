@@ -3,7 +3,7 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { ActiveEnum } from '../Shared/ActiveEnum'
 import { ImageParams } from '../Shared/ImageParams'
 
-export interface CreateBrandRequestParams {
+export interface BrandCreateRequestParams {
     name?: string
     external_id?: number
     active?: ActiveEnum
@@ -17,8 +17,8 @@ export interface CreateBrandRequestParams {
     banner?: ImageParams
 }
 
-export class CreateBrandRequest implements RequestPayload {
-    constructor(private params: CreateBrandRequestParams) {}
+export class BrandCreateRequest implements RequestPayload {
+    constructor(private params: BrandCreateRequestParams) {}
 
     getUrl(): string {
         return '/brands'

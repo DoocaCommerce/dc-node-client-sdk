@@ -1,13 +1,13 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { CreateBrandRequestParams } from './CreateBrandRequest'
+import { BrandCreateRequestParams } from './BrandCreateRequest'
 
-export interface EditBrandRequestParams extends CreateBrandRequestParams {
+export interface BrandEditRequestParams extends BrandCreateRequestParams {
     id: number
 }
 
-export class EditBrandRequest implements RequestPayload {
-    constructor(private params: EditBrandRequestParams) {}
+export class BrandEditRequest implements RequestPayload {
+    constructor(private params: BrandEditRequestParams) {}
 
     getUrl(): string {
         return `/brands/${this.params.id}`

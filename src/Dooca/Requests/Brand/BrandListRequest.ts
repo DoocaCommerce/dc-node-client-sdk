@@ -1,7 +1,7 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base/Request'
 
-export class ListBrandRequest implements Request {
+export class BrandListRequest implements Request {
     constructor() {}
 
     getUrl(): string {

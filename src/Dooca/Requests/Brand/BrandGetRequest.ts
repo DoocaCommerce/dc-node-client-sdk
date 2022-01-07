@@ -1,18 +1,18 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base/Request'
 
-export interface DeleteBrandRequestParams {
+export interface QueryBrandRequestParams {
     id: number
 }
 
-export class DeleteBrandRequest implements Request {
-    constructor(private params: DeleteBrandRequestParams) {}
+export class BrandGetRequest implements Request {
+    constructor(private params: QueryBrandRequestParams) {}
 
     getUrl(): string {
         return `/brands/${this.params.id}`
     }
 
     getMethod(): HttpMethodEnum {
-        return HttpMethodEnum.DELETE
+        return HttpMethodEnum.GET
     }
 }
