@@ -27,12 +27,13 @@ export class DoocaClient {
             url: `${baseUrl}${req.getUrl()}`,
             method: req.getMethod(),
             headers: {
-                authorization: `Bearer ${token}`
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
             }
         }
 
-        if (req instanceof RequestPayload) {
-            config.payload = req.getPayload()
+        if (req.hasPayload()) {
+            config.payload = (req as RequestPayload).getPayload()
         }
 
         return config

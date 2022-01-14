@@ -1,0 +1,5 @@
+export { VariationListRequest } from './VariationListRequest'
+export { VariationGetOneRequest } from './VariationGetOneRequest'
+export { VariationCreateRequest } from './VariationCreateRequest'
+export { VariationUpdateRequest } from './VariationUpdateRequest'
+export { VariationDeleteRequest } from './VariationDeleteRequest'

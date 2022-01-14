@@ -2,17 +2,17 @@ import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 
-export interface BrandDeleteRequestParams {
+export interface AttributeDeleteRequestParams {
     id: number
 }
 
-export class BrandDeleteRequest extends Request {
-    constructor(private params: BrandDeleteRequestParams) {
+export class AttributeDeleteRequest extends Request {
+    constructor(private params: AttributeDeleteRequestParams) {
         super()
     }
 
     getUrl(): string {
-        return `${BaseUriEnum.BRANDS}/${this.params.id}`
+        return `${BaseUriEnum.ATTRIBUTES}/${this.params.id}`
     }
 
     getMethod(): HttpMethodEnum {

@@ -1,0 +1,5 @@
+export { ProductListRequest } from './ProductListRequest'
+export { ProductGetOneRequest } from './ProductGetOneRequest'
+export { ProductCreateRequest } from './ProductCreateRequest'
+export { ProductUpdateRequest } from './ProductUpdateRequest'
+export { ProductDeleteRequest } from './ProductDeleteRequest'

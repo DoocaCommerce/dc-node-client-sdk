@@ -1,5 +1,5 @@
 export { BrandCreateRequest } from './BrandCreateRequest'
 export { BrandDeleteRequest } from './BrandDeleteRequest'
-export { BrandEditRequest } from './BrandEditRequest'
-export { BrandGetRequest } from './BrandGetRequest'
+export { BrandUpdateRequest } from './BrandUpdateRequest'
+export { BrandGetOneRequest } from './BrandGetOneRequest'
 export { BrandListRequest } from './BrandListRequest'

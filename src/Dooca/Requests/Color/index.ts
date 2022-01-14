@@ -1,0 +1,5 @@
+export { ColorListRequest } from './ColorListRequest'
+export { ColorGetOneRequest } from './ColorGetOneRequest'
+export { ColorCreateRequest } from './ColorCreateRequest'
+export { ColorUpdateRequest } from './ColorUpdateRequest'
+export { ColorDeleteRequest } from './ColorDeleteRequest'

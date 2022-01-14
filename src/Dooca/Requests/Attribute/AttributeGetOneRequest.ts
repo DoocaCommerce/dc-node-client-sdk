@@ -2,13 +2,17 @@ import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 
-export class BrandListRequest extends Request {
-    constructor() {
+export interface AttributeGetOneRequestParams {
+    id: number
+}
+
+export class AttributeGetOneRequest extends Request {
+    constructor(private params: AttributeGetOneRequestParams) {
         super()
     }
 
     getUrl(): string {
-        return BaseUriEnum.BRANDS
+        return `${BaseUriEnum.ATTRIBUTES}/${this.params.id}`
     }
 
     getMethod(): HttpMethodEnum {

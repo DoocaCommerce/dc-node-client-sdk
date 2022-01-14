@@ -4,27 +4,34 @@ import { ActiveEnum } from '../Shared/ActiveEnum'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { ImageParams } from '../Shared/ImageParams'
 
-export interface BrandCreateRequestParams {
+export interface CategoryCreateRequestParams {
+    parent_id?: number
+    hotsite_id?: number
+    external_id?: string
     name?: string
-    external_id?: number
-    active?: ActiveEnum
     description?: string
     image?: ImageParams
+    banner?: ImageParams // TODO: verificar se esse campo é uma imagem
+    banner_link?: string
+    breadcrumb?: string
+    breadcrumbs?: any // TODO: criar objeto para este campo
+    depth?: number
+    google_taxonomy_id?: number
+    slug?: string
     meta_title?: string
-    meta_keywords?: string
     meta_description?: string
-    short_description?: string
+    meta_keywords?: string
     position?: number
-    banner?: ImageParams
+    active?: ActiveEnum
 }
 
-export class BrandCreateRequest extends RequestPayload {
-    constructor(private params: BrandCreateRequestParams) {
+export class CategoryCreateRequest extends RequestPayload {
+    constructor(private params: CategoryCreateRequestParams) {
         super()
     }
 
     getUrl(): string {
-        return BaseUriEnum.BRANDS
+        return BaseUriEnum.CATEGORIES
     }
 
     getMethod(): HttpMethodEnum {
