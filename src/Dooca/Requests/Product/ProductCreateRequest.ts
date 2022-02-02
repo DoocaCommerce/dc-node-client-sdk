@@ -5,13 +5,15 @@ import { AgeGroupEnum } from '../Shared/AgeGroupEnum'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { GenderEnum } from '../Shared/GenderEnum'
 import { VariationCreateRequestParams } from '../Variation/VariationCreateRequest'
+import { ProductImageParams } from './ProductImageParams'
 
 export interface ProductCreateRequestParams {
     category_default_id?: number
     brand_id?: number
     hotsite_id?: number
     external_id?: string
-    name?: string
+    name: string
+    slug?: string
     description?: string
     short_description?: string
     relevance?: boolean
@@ -24,7 +26,6 @@ export interface ProductCreateRequestParams {
     depth?: number
     width?: number
     height?: number
-    balance?: number
     min_quantity?: number
     max_quantity?: number
     sell_in_kit_only?: boolean
@@ -45,15 +46,13 @@ export interface ProductCreateRequestParams {
     is_virtual?: boolean
     is_pre_sale?: boolean
     has_gift_wrapping?: boolean
-    slug?: string
     meta_title?: string
     meta_description?: string
     meta_keywords?: string
     active?: ActiveEnum
-
     variations?: Partial<VariationCreateRequestParams>[]
     feature_ids?: number[]
-    // images: []
+    images?: ProductImageParams[]
 }
 
 export class ProductCreateRequest extends RequestPayload {

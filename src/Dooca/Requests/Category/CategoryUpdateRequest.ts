@@ -3,7 +3,7 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { CategoryCreateRequestParams } from './CategoryCreateRequest'
 
-export interface CategoryUpdateRequestParams extends CategoryCreateRequestParams {
+export interface CategoryUpdateRequestParams extends Partial<CategoryCreateRequestParams> {
     id: number
 }
 

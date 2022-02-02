@@ -4,7 +4,7 @@ import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { VariationCreateRequestParams } from './VariationCreateRequest'
 
 export interface VariationUpdateRequestParams
-    extends Omit<Partial<VariationCreateRequestParams>, 'balance'> {
+    extends Omit<Partial<VariationCreateRequestParams>, 'product_id' | 'balance'> {
     id: number
 }
 

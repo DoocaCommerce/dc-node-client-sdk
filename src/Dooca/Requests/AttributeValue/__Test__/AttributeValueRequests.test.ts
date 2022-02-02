@@ -37,15 +37,15 @@ describe('Attribute value requests', () => {
     })
 
     test('POST /attribute_values', async () => {
-        const res = await client.send(new AttributeValueCreateRequest({ name: 'Tamanho' }))
+        const res = await client.send(
+            new AttributeValueCreateRequest({ attribute_id: 1, name: 'M' })
+        )
 
         expect(res.getStatusCode()).toBe(201)
     })
 
     test('PUT /attribute_values/:id', async () => {
-        const res = await client.send(
-            new AttributeValueUpdateRequest({ id: 1, name: `Tamanho [UPDATED]` })
-        )
+        const res = await client.send(new AttributeValueUpdateRequest({ id: 1, name: `G` }))
 
         expect(res.getStatusCode()).toBe(200)
     })

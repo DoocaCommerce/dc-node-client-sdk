@@ -37,9 +37,25 @@ describe('Product requests', () => {
     })
 
     test('POST /products', async () => {
-        const res = await client.send(new ProductCreateRequest({ name: 'Produto teste' }))
+        const res = await client.send(
+            new ProductCreateRequest({
+                name: 'Produto teste',
+                variations: [
+                    {
+                        attribute_value_id: 1,
+                        color_id: 1,
+                        price: 199
+                    }
+                ],
+                images: [
+                    {
+                        src: 'https://via.placeholder.com/500x250'
+                    }
+                ]
+            })
+        )
 
-        expect(res.getStatusCode()).toBe(201)
+        expect(res.getStatusCode()).toBe(200)
     })
 
     test('PUT /products/:id', async () => {
@@ -51,7 +67,7 @@ describe('Product requests', () => {
     })
 
     test('DELETE /products/:id', async () => {
-        const res = await client.send(new ProductDeleteRequest({ id: 1 }))
+        const res = await client.send(new ProductDeleteRequest({ id: 13 }))
 
         expect(res.getStatusCode()).toBe(204)
     })

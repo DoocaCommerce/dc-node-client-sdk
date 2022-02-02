@@ -37,13 +37,20 @@ describe('Variation requests', () => {
     })
 
     test('POST /variations', async () => {
-        const res = await client.send(new VariationCreateRequest({ product_id: 1, color_id: 1 }))
+        const res = await client.send(
+            new VariationCreateRequest({
+                product_id: 1,
+                color_id: 1,
+                attribute_value_id: 1,
+                price: 100
+            })
+        )
 
         expect(res.getStatusCode()).toBe(201)
     })
 
     test('PUT /variations/:id', async () => {
-        const res = await client.send(new VariationUpdateRequest({ id: 1, color_id: 2 }))
+        const res = await client.send(new VariationUpdateRequest({ id: 1, price: 199 }))
 
         expect(res.getStatusCode()).toBe(200)
     })

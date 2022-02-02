@@ -3,7 +3,7 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { ColorCreateRequestParams } from './ColorCreateRequest'
 
-export interface ColorUpdateRequestParams extends ColorCreateRequestParams {
+export interface ColorUpdateRequestParams extends Partial<ColorCreateRequestParams> {
     id: number
 }
 

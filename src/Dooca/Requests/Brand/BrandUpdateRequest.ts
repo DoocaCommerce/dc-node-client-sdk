@@ -3,7 +3,7 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { BrandCreateRequestParams } from './BrandCreateRequest'
 
-export interface BrandUpdateRequestParams extends BrandCreateRequestParams {
+export interface BrandUpdateRequestParams extends Partial<BrandCreateRequestParams> {
     id: number
 }
 

@@ -4,10 +4,8 @@ import { BrandGetOneRequest } from '../BrandGetOneRequest'
 import { BrandCreateRequest } from '../BrandCreateRequest'
 import { BrandUpdateRequest } from '../BrandUpdateRequest'
 import { BrandDeleteRequest } from '../BrandDeleteRequest'
-// import { ClientFactory } from '../../../__Test__/ClientFactoryTest'
 import { ClientTest } from '../../../__Test__/ClientTest'
 
-// jest.mock('dc-node-backend/lib/Http/Client', () => ({ ...ClientFactory }))
 jest.mock('dc-node-backend/lib/Http/Client', () => {
     return {
         ClientFactory: {

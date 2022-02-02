@@ -8,7 +8,7 @@ export interface CategoryCreateRequestParams {
     parent_id?: number
     hotsite_id?: number
     external_id?: string
-    name?: string
+    name: string
     description?: string
     image?: ImageParams
     banner?: ImageParams // TODO: verificar se esse campo é uma imagem

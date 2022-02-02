@@ -5,7 +5,7 @@ import { BaseUriEnum } from '../Shared/BaseUriEnum'
 
 export interface AttributeCreateRequestParams {
     external_id?: string
-    name?: string
+    name: string
     slug?: string
     position?: number
     active?: ActiveEnum

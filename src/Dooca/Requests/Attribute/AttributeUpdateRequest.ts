@@ -3,7 +3,7 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { AttributeCreateRequestParams } from './AttributeCreateRequest'
 
-export interface AttributeUpdateRequestParams extends AttributeCreateRequestParams {
+export interface AttributeUpdateRequestParams extends Partial<AttributeCreateRequestParams> {
     id: number
 }
 

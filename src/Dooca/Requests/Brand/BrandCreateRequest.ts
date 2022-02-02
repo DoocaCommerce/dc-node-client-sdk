@@ -5,8 +5,8 @@ import { BaseUriEnum } from '../Shared/BaseUriEnum'
 import { ImageParams } from '../Shared/ImageParams'
 
 export interface BrandCreateRequestParams {
-    name?: string
     external_id?: number
+    name: string
     active?: ActiveEnum
     description?: string
     image?: ImageParams
