@@ -1,8 +1,10 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export class ColorListRequest extends Request {
+export interface ColorQueryParams extends PaginationQueryParams {}
+export class ColorListRequest extends Request<ColorQueryParams> {
     constructor() {
         super()
     }

@@ -1,8 +1,11 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export class StockListRequest extends Request {
+export interface StockQueryParams extends PaginationQueryParams {}
+
+export class StockListRequest extends Request<StockQueryParams> {
     constructor() {
         super()
     }

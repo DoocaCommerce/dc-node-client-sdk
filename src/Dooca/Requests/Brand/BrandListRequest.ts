@@ -1,8 +1,11 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 import { Request } from '../../../Base/Request'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export class BrandListRequest extends Request {
+export interface BrandQueryParams extends PaginationQueryParams {}
+
+export class BrandListRequest extends Request<BrandQueryParams> {
     constructor() {
         super()
     }

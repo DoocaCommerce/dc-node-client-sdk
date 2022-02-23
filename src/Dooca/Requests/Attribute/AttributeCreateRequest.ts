@@ -1,7 +1,7 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { ActiveEnum } from '../Shared/ActiveEnum'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { ActiveEnum } from '../../../Shared/ActiveEnum'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
 export interface AttributeCreateRequestParams {
     external_id?: string

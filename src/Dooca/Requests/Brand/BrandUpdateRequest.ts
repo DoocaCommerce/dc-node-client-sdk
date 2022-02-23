@@ -1,6 +1,6 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { BrandCreateRequestParams } from './BrandCreateRequest'
 
 export interface BrandUpdateRequestParams extends Partial<BrandCreateRequestParams> {

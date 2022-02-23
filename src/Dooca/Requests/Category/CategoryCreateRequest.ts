@@ -1,8 +1,8 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { ActiveEnum } from '../Shared/ActiveEnum'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
-import { ImageParams } from '../Shared/ImageParams'
+import { ActiveEnum } from '../../../Shared/ActiveEnum'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
+import { ImageParams } from '../../../Shared/ImageParams'
 
 export interface CategoryCreateRequestParams {
     parent_id?: number

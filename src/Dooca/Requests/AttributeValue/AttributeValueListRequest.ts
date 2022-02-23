@@ -1,8 +1,10 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export class AttributeValueListRequest extends Request {
+export interface AttributeValueQueryParams extends PaginationQueryParams {}
+export class AttributeValueListRequest extends Request<AttributeValueQueryParams> {
     constructor() {
         super()
     }

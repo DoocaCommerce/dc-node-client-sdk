@@ -1,8 +1,11 @@
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { Request } from '../../../Base'
-import { BaseUriEnum } from '../Shared/BaseUriEnum'
+import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
+import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export class CategoryListRequest extends Request {
+export interface CategoryQueryParams extends PaginationQueryParams {}
+
+export class CategoryListRequest extends Request<CategoryQueryParams> {
     constructor() {
         super()
     }

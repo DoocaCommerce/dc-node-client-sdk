@@ -25,7 +25,7 @@ describe('Color requests', () => {
     })
 
     test('GET /colors', async () => {
-        const res = await client.send(new ColorListRequest())
+        const res = await client.send(new ColorListRequest().setQuery({ limit, page }))
 
         expect(res.getStatusCode()).toBe(200)
     })

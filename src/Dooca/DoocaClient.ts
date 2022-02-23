@@ -23,8 +23,14 @@ export class DoocaClient {
     private getRequestConfig(req: Request): ClientConfig {
         const { baseUrl, token } = this.config
 
+        let url = baseUrl + req.getUrl()
+
+        if (req.hasQuery()) {
+            url += req.getQueryString()
+        }
+
         const config: ClientConfig = {
-            url: `${baseUrl}${req.getUrl()}`,
+            url,
             method: req.getMethod(),
             headers: {
                 'Content-Type': 'application/json',
