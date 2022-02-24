@@ -13,7 +13,7 @@ export abstract class Request<PARAMS = any> {
         return false
     }
 
-    setQuery(values: PARAMS): Request<PARAMS> {
+    setQueryParams(values: PARAMS): Request<PARAMS> {
         this.query = values
         return this
     }

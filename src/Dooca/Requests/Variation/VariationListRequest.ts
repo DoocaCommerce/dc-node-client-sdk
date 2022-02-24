@@ -3,9 +3,9 @@ import { Request } from '../../../Base'
 import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export interface VariationQueryParams extends PaginationQueryParams {}
+export interface VariationListQueryParams extends PaginationQueryParams {}
 
-export class VariationListRequest extends Request<VariationQueryParams> {
+export class VariationListRequest extends Request<VariationListQueryParams> {
     constructor() {
         super()
     }

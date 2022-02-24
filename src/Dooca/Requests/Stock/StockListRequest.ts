@@ -3,9 +3,9 @@ import { Request } from '../../../Base'
 import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export interface StockQueryParams extends PaginationQueryParams {}
+export interface StockListQueryParams extends PaginationQueryParams {}
 
-export class StockListRequest extends Request<StockQueryParams> {
+export class StockListRequest extends Request<StockListQueryParams> {
     constructor() {
         super()
     }

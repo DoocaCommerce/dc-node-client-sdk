@@ -3,8 +3,9 @@ import { Request } from '../../../Base'
 import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 
-export interface AttributeValueQueryParams extends PaginationQueryParams {}
-export class AttributeValueListRequest extends Request<AttributeValueQueryParams> {
+export interface AttributeValueListQueryParams extends PaginationQueryParams {}
+
+export class AttributeValueListRequest extends Request<AttributeValueListQueryParams> {
     constructor() {
         super()
     }
