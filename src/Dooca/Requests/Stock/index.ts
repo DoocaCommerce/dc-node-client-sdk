@@ -1,2 +1,2 @@
-export { StockListRequest } from './StockListRequest'
-export { StockMassUpdateRequest } from './StockMassUpdateRequest'
+export { StockListRequest, StockListQueryParams } from './StockListRequest'
+export { StockMassUpdateRequest, StockMassUpdateRequestParams } from './StockMassUpdateRequest'
