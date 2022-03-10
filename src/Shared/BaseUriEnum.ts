@@ -6,6 +6,7 @@ export enum BaseUriEnum {
     COLORS = '/colors',
     ORDERS = '/orders',
     PRODUCTS = '/products',
+    SHOPS = '/shops',
     STOCKS = '/stocks',
     VARIATIONS = '/variations'
 }
