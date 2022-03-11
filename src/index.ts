@@ -78,6 +78,8 @@ export {
     ProductDeleteRequestParams
 } from './Dooca/Requests/Product'
 
+export { ShopListByAppRequest, ShopListByAppQueryParams } from './Dooca/Requests/Shop'
+
 export {
     StockListRequest,
     StockListQueryParams,
