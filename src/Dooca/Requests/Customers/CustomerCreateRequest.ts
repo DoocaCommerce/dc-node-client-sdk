@@ -3,7 +3,7 @@ import { AddressParams } from '../../../Shared/AddressParams'
 import { RequestPayload } from '../../../Base/RequestPayload'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersCreateRequestParams {
+export interface CustomerCreateRequestParams {
     first_name: string
     last_name: string
     cgc: string
@@ -14,8 +14,8 @@ export interface CustomersCreateRequestParams {
     address?: AddressParams
 }
 
-export class CustomersCreateRequest extends RequestPayload {
-    constructor(private params: CustomersCreateRequestParams) {
+export class CustomerCreateRequest extends RequestPayload {
+    constructor(private params: CustomerCreateRequestParams) {
         super()
     }
 

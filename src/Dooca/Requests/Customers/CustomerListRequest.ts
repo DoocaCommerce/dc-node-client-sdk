@@ -5,7 +5,7 @@ import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams
 
 export interface CustomersListQueryParams extends PaginationQueryParams {}
 
-export class CustomersListRequest extends Request<CustomersListQueryParams> {
+export class CustomerListRequest extends Request<CustomersListQueryParams> {
     constructor() {
         super()
     }

@@ -1,10 +1,10 @@
 import { DoocaClient } from '../../../DoocaClient'
 import { ClientTest } from '../../../__Test__/ClientTest'
-import { CustomersListRequest } from '../CustomersListRequest'
-import { CustomersCreateRequest } from '../CustomersCreateRequest'
-import { CustomersUpdateRequest } from '../CustomersUpdateRequest'
-import { CustomersDeleteRequest } from '../CustomersDeleteRequest'
-import { CustomersGetOneRequest } from '../CustomersGetOneRequest'
+import { CustomerListRequest } from '../CustomerListRequest'
+import { CustomerCreateRequest } from '../CustomerCreateRequest'
+import { CustomerUpdateRequest } from '../CustomerUpdateRequest'
+import { CustomerDeleteRequest } from '../CustomerDeleteRequest'
+import { CustomerGetOneRequest } from '../CustomerGetOneRequest'
 
 jest.mock('dc-node-backend/lib/Http/Client', () => ({
     ClientFactory: {
@@ -24,7 +24,7 @@ describe('Customers requests', () => {
 
     test('POST /customers', async () => {
         const res = await client.send(
-            new CustomersCreateRequest({
+            new CustomerCreateRequest({
                 first_name: 'Suporte',
                 last_name: 'Dooca',
                 cgc: '73535102006',
@@ -39,7 +39,7 @@ describe('Customers requests', () => {
 
     test('PUT /customers/:id', async () => {
         const res = await client.send(
-            new CustomersUpdateRequest({
+            new CustomerUpdateRequest({
                 id: 1,
                 first_name: 'Generic New Name',
                 cgc: '01072046067',
@@ -51,20 +51,20 @@ describe('Customers requests', () => {
     })
 
     test('DELETE /customers/:id', async () => {
-        const res = await client.send(new CustomersDeleteRequest({ id: 1 }))
+        const res = await client.send(new CustomerDeleteRequest({ id: 1 }))
 
         expect(res.getStatusCode()).toBe(204)
     })
 
     test('GET /customers/:id', async () => {
-        const res = await client.send(new CustomersGetOneRequest({ id: 1 }))
+        const res = await client.send(new CustomerGetOneRequest({ id: 1 }))
 
         expect(res.getStatusCode()).toBe(200)
     })
 
     test('GET /customers', async () => {
         const res = await client.send(
-            new CustomersListRequest().setQueryParams({
+            new CustomerListRequest().setQueryParams({
                 limit: 25,
                 page: 1
             })

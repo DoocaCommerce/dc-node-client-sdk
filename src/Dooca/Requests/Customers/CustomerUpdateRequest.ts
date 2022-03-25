@@ -1,13 +1,13 @@
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { CustomersCreateRequestParams } from './CustomersCreateRequest'
+import { CustomerCreateRequestParams } from './CustomerCreateRequest'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersUpdateRequestParams extends Partial<CustomersCreateRequestParams> {
+export interface CustomersUpdateRequestParams extends Partial<CustomerCreateRequestParams> {
     id: number
 }
 
-export class CustomersUpdateRequest extends RequestPayload {
+export class CustomerUpdateRequest extends RequestPayload {
     constructor(private params: CustomersUpdateRequestParams) {
         super()
     }
