@@ -8,5 +8,5 @@ export enum BaseUriEnum {
     PRODUCTS = '/products',
     SHOPS = '/shops',
     STOCKS = '/stocks',
-    VARIATIONS = '/variations'
+    VARIATIONS = '/variations',
 }
