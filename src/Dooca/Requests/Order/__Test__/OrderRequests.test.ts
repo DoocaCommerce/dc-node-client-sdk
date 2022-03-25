@@ -1,10 +1,11 @@
 import { DoocaClient } from '../../../DoocaClient'
+import { OrderListRequest } from '../OrderListRequest'
 import { ClientTest } from '../../../__Test__/ClientTest'
 import { OrderCreateRequest } from '../OrderCreateRequest'
-import { OrderGetByTokenRequest } from '../OrderGetByTokenRequest'
-import { OrderGetOneRequest } from '../OrderGetOneRequest'
-import { OrderListRequest } from '../OrderListRequest'
 import { OrderUpdateRequest } from '../OrderUpdateRequest'
+import { OrderGetOneRequest } from '../OrderGetOneRequest'
+import { OrderGetByTokenRequest } from '../OrderGetByTokenRequest'
+import { StatusEnum, PaymentStatusEnum, PaymentMethodEnum, FulfillmentStatusEnum } from '../Enums'
 
 jest.mock('dc-node-backend/lib/Http/Client', () => {
     return {
@@ -95,8 +96,12 @@ describe('Order requests', () => {
     test('GET /orders', async () => {
         const res = await client.send(
             new OrderListRequest({
+                page: 1,
                 limit: 25,
-                page: 1
+                status: StatusEnum.ARCHIVED,
+                payment_status: PaymentStatusEnum.APPROVED,
+                payment_method: PaymentMethodEnum.CREDITCARD,
+                fulfillment_status: FulfillmentStatusEnum.DELIVERED
             })
         )
 
