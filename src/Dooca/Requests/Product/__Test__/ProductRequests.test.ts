@@ -55,7 +55,7 @@ describe('Product requests', () => {
             })
         )
 
-        expect(res.getStatusCode()).toBe(200)
+        expect(res.getStatusCode()).toBe(201)
     })
 
     test('PUT /products/:id', async () => {

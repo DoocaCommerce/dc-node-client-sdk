@@ -33,7 +33,7 @@ describe('Order requests', () => {
                     receiver: 'FABIANA DE LIMA',
                     zipcode: '51160070',
                     street: 'Rua Jorge de Lima',
-                    number: '245',
+                    number: 245,
                     detail: 'APT 1305',
                     district: 'Imbiribeira',
                     city: 'Recife',

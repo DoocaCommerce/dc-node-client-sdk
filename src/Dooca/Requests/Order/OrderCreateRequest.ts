@@ -3,21 +3,13 @@ import { OrderPaymentParams } from './OrderPaymentParams'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { OrderShippingParams } from './OrderShippingParams'
 import { RequestPayload } from '../../../Base/RequestPayload'
+import { AddressParams } from '../../../Shared/AddressParams'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
 export interface OrderCreateRequestParams {
     customer_id: number
     note?: string
-    address: {
-        receiver: string
-        zipcode: string
-        street: string
-        number: string
-        detail: string
-        district: string
-        city: string
-        state: string
-    }
+    address: AddressParams
     payment: OrderPaymentParams
     shipping: OrderShippingParams
     items: OrderItemParams[]
