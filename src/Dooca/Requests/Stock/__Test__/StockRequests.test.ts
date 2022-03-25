@@ -35,6 +35,6 @@ describe('Stock requests', () => {
             ])
         )
 
-        expect(res.getStatusCode()).toBe(204)
+        expect(res.getStatusCode()).toBe(200)
     })
 })
