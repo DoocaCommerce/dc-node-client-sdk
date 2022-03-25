@@ -2,12 +2,12 @@ import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersGetOneRequestParams {
+export interface CustomersDeleteRequestParams {
     id: number
 }
 
-export class CustomersGetOneRequest extends Request {
-    constructor(private params: CustomersGetOneRequestParams) {
+export class CustomerDeleteRequest extends Request {
+    constructor(private params: CustomersDeleteRequestParams) {
         super()
     }
 
@@ -16,6 +16,6 @@ export class CustomersGetOneRequest extends Request {
     }
 
     getMethod(): HttpMethodEnum {
-        return HttpMethodEnum.GET
+        return HttpMethodEnum.DELETE
     }
 }
