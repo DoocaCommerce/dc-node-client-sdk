@@ -6,7 +6,7 @@ export interface CustomersDeleteRequestParams {
     id: number
 }
 
-export class CustomersDeleteRequest extends Request {
+export class CustomerDeleteRequest extends Request {
     constructor(private params: CustomersDeleteRequestParams) {
         super()
     }

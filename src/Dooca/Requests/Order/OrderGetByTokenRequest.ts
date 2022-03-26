@@ -2,17 +2,17 @@ import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersGetOneRequestParams {
-    id: number
+export interface OrderGetByTokenRequestParams {
+    token: string
 }
 
-export class CustomersGetOneRequest extends Request {
-    constructor(private params: CustomersGetOneRequestParams) {
+export class OrderGetByTokenRequest extends Request {
+    constructor(private params: OrderGetByTokenRequestParams) {
         super()
     }
 
     getUrl(): string {
-        return `${BaseUriEnum.CUSTOMERS}/${this.params.id}`
+        return `${BaseUriEnum.ORDERS}/token/${this.params.token}`
     }
 
     getMethod(): HttpMethodEnum {

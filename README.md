@@ -135,3 +135,15 @@ const response = await client.send(request)
     -   VariationCreateRequest
     -   VariationUpdateRequest
     -   VariationDeleteRequest
+-   <ins>**Customer**</ins>
+    -   CustomerCreateRequest
+    -   CustomerDeleteRequest
+    -   CustomerGetOneRequest
+    -   CustomerListRequest
+    -   CustomerUpdateRequest
+-   <ins>**Order**</ins>
+    -   OrderCreateRequest
+    -   OrderGetByTokenRequest
+    -   OrderGetOneRequest
+    -   OrderListRequest
+    -   OrderUpdateRequest
