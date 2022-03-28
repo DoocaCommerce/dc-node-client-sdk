@@ -3,12 +3,12 @@ import { RequestPayload } from '../../../Base/RequestPayload'
 import { CustomerCreateRequestParams } from './CustomerCreateRequest'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersUpdateRequestParams extends Partial<CustomerCreateRequestParams> {
+export interface CustomerUpdateRequestParams extends Partial<CustomerCreateRequestParams> {
     id: number
 }
 
 export class CustomerUpdateRequest extends RequestPayload {
-    constructor(private params: CustomersUpdateRequestParams) {
+    constructor(private params: CustomerUpdateRequestParams) {
         super()
     }
 

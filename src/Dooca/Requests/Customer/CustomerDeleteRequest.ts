@@ -2,12 +2,12 @@ import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 
-export interface CustomersDeleteRequestParams {
+export interface CustomerDeleteRequestParams {
     id: number
 }
 
 export class CustomerDeleteRequest extends Request {
-    constructor(private params: CustomersDeleteRequestParams) {
+    constructor(private params: CustomerDeleteRequestParams) {
         super()
     }
 
