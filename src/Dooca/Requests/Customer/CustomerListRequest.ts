@@ -3,9 +3,9 @@ import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 
-export interface CustomersListQueryParams extends PaginationQueryParams {}
+export interface CustomerListQueryParams extends PaginationQueryParams {}
 
-export class CustomerListRequest extends Request<CustomersListQueryParams> {
+export class CustomerListRequest extends Request<CustomerListQueryParams> {
     constructor() {
         super()
     }
