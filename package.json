@@ -32,5 +32,8 @@
     "dependencies": {
         "dc-node-backend": "github:DoocaCommerce/dc-node-backend",
         "dotenv": "^10.0.0"
+    },
+    "peerDependencies": {
+        "dc-node-backend": "^0.0.3"
     }
 }
