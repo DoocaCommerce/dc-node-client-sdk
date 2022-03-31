@@ -1,4 +1,4 @@
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 import { stringify } from 'querystring'
 
 export type QueryParam = Record<'name' | 'value', any>
