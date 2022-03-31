@@ -1,9 +1,4 @@
-import {
-    Client,
-    ClientConfig,
-    ClientFactory,
-    ClientResponse
-} from 'dc-node-backend/lib/Http/Client'
+import { Client, ClientConfig, ClientFactory, ClientResponse } from 'dc-node-backend'
 import { Request, RequestPayload } from '../Base'
 import { DoocaClientConfig } from './DoocaClientConfig'
 
