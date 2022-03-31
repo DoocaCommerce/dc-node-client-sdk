@@ -1,7 +1,7 @@
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { AddressParams } from '../../../Shared/AddressParams'
 import { RequestPayload } from '../../../Base/RequestPayload'
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 
 export interface CustomerCreateRequestParams {
     first_name: string

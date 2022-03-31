@@ -1,7 +1,7 @@
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { RequestPayload } from '../../../Base/RequestPayload'
 import { CustomerCreateRequestParams } from './CustomerCreateRequest'
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 
 export interface CustomerUpdateRequestParams extends Partial<CustomerCreateRequestParams> {
     id: number

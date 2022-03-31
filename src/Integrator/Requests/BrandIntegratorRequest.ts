@@ -1,4 +1,4 @@
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 import { RequestPayload } from '../../Base'
 import { BrandUpdateRequestParams } from '../../Dooca/Requests/Brand'
 import { BaseUriEnum } from '../../Shared/BaseUriEnum'

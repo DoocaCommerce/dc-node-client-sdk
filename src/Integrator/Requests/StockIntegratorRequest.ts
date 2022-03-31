@@ -1,4 +1,4 @@
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 import { RequestPayload } from '../../Base'
 import { StockMassUpdateRequestParams } from '../../Dooca/Requests/Stock'
 import { BaseUriEnum } from '../../Shared/BaseUriEnum'

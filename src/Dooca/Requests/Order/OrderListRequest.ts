@@ -1,6 +1,6 @@
 import { Request } from '../../../Base/Request'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 import { PaginationQueryParams } from '../../../Base/Query/PaginationQueryParams'
 import { StatusEnum, PaymentStatusEnum, PaymentMethodEnum, FulfillmentStatusEnum } from './Enums'
 

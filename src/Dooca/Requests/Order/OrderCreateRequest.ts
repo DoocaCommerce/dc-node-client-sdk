@@ -4,7 +4,7 @@ import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { OrderShippingParams } from './OrderShippingParams'
 import { RequestPayload } from '../../../Base/RequestPayload'
 import { AddressParams } from '../../../Shared/AddressParams'
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 
 export interface OrderCreateRequestParams {
     customer_id: number

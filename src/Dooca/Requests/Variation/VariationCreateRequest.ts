@@ -1,4 +1,4 @@
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 import { RequestPayload } from '../../../Base/RequestPayload'
 import { ActiveEnum } from '../../../Shared/ActiveEnum'
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'

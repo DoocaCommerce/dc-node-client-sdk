@@ -1,5 +1,5 @@
 import { Client, ClientConfig, ClientResponse } from 'dc-node-backend/lib/Http/Client'
-import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
+import { HttpMethodEnum } from 'dc-node-backend'
 
 const codes = {
     [HttpMethodEnum.GET]: 200,
