@@ -33,7 +33,7 @@
     "dependencies": {
         "dotenv": "^10.0.0"
     },
-    "peerDependencies": {
-        "dc-node-backend": "^0.0.3"
-    }
+    "bundledDependencies": [
+        "dc-node-backend"
+    ]
 }
