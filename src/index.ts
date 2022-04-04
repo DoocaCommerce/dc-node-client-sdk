@@ -1,5 +1,7 @@
 export { DoocaClient, DoocaClientConfig } from './Dooca'
 
+export { Request, RequestPayload } from './Base'
+
 export {
     AttributeListRequest,
     AttributeListQueryParams,
