@@ -8,7 +8,7 @@ export class SettingGetRequest extends Request {
     }
 
     getUrl(): string {
-        return `${BaseUriEnum.API_SETTINGS}`
+        return `${BaseUriEnum.SETTINGS}`
     }
 
     getMethod(): HttpMethodEnum {

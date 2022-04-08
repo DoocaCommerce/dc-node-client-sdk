@@ -20,7 +20,7 @@ describe('Settings requests', () => {
         })
     })
 
-    test('GET /api_settings', async () => {
+    test('GET /settings', async () => {
         const res = await client.send(new SettingGetRequest())
 
         expect(res.getStatusCode()).toBe(200)
