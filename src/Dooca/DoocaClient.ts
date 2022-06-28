@@ -1,4 +1,11 @@
-import { Client, ClientConfig, ClientFactory, ClientResponse } from 'dc-node-backend'
+import {
+    Client,
+    ClientConfig,
+    ClientFactory,
+    ClientResponse,
+    isEmpty,
+    isNotEmpty
+} from 'dc-node-backend'
 import { Request, RequestPayload } from '../Base'
 import { DoocaClientConfig } from './DoocaClientConfig'
 
@@ -35,6 +42,13 @@ export class DoocaClient {
 
         if (req.hasPayload()) {
             config.payload = (req as RequestPayload).getPayload()
+        }
+
+        if (isNotEmpty(req.getHeaders)) {
+            config.headers = {
+                ...config.headers,
+                ...req.getHeaders()
+            }
         }
 
         return config

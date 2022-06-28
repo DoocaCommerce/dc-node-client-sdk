@@ -32,4 +32,8 @@ export abstract class Request<PARAMS = any> {
     hasQuery(): boolean {
         return Object.keys(this.query).length > 0
     }
+
+    getHeaders(): { [key: string]: string } {
+        return {}
+    }
 }
