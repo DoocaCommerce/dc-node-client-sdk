@@ -1,0 +1,1 @@
+export { SettingGetRequest } from './SettingGetRequest'
