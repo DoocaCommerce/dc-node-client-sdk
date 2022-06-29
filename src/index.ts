@@ -127,5 +127,9 @@ export {
     CustomerUpdateRequest,
     CustomerUpdateRequestParams,
     CustomerDeleteRequest,
-    CustomerDeleteRequestParams
+    CustomerDeleteRequestParams,
+    CustomerGetOneCgcRequest,
+    CustomerGetOneCgcRequestParams,
+    CustomerGetOneEmailRequest,
+    CustomerGetOneEmailRequestParams
 } from './Dooca/Requests/Customer'
