@@ -116,3 +116,16 @@ export {
     OrderUpdateRequest,
     OrderUpdateRequestParams
 } from './Dooca/Requests/Order'
+
+export {
+    CustomerListRequest,
+    CustomerListQueryParams,
+    CustomerGetOneRequest,
+    CustomerGetOneRequestParams,
+    CustomerCreateRequest,
+    CustomerCreateRequestParams,
+    CustomerUpdateRequest,
+    CustomerUpdateRequestParams,
+    CustomerDeleteRequest,
+    CustomerDeleteRequestParams
+} from './Dooca/Requests/Customer'

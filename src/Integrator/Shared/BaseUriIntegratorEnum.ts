@@ -1,3 +1,4 @@
 export enum BaseUriIntegratorEnum {
-    INTEGRATOR = '/integrador'
+    INTEGRATOR = '/integrator',
+    IMPORT = '/import'
 }
