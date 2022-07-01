@@ -133,3 +133,5 @@ export {
     CustomerGetOneEmailRequest,
     CustomerGetOneEmailRequestParams
 } from './Dooca/Requests/Customer'
+
+export { OrderCreateIntegratorRequest, OrderUpdateIntegratorRequest } from './Integrator'
