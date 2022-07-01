@@ -8,6 +8,7 @@ import { HttpMethodEnum } from 'dc-node-backend'
 
 export interface OrderCreateRequestParams {
     customer_id: number
+    external_id?: string
     note?: string | null
     address: AddressParams
     payment: OrderPaymentParams
