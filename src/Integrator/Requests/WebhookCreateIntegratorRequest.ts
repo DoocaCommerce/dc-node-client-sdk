@@ -16,7 +16,7 @@ export class WebhookCreateIntegratorRequest extends RequestPayload {
         return JSON.stringify(this.params)
     }
     getUrl(): string {
-        return `${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.IMPORT}/${BaseUriIntegratorEnum.WEBHOOK}`
+        return `/${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.CREATE}/${BaseUriIntegratorEnum.WEBHOOK}`
     }
     getMethod(): HttpMethodEnum {
         return HttpMethodEnum.POST

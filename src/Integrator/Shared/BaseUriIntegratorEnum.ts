@@ -1,5 +1,6 @@
 export enum BaseUriIntegratorEnum {
     INTEGRATOR = 'integrator',
     IMPORT = 'import',
-    WEBHOOK = 'webhook'
+    WEBHOOK = 'webhook',
+    CREATE = 'create'
 }
