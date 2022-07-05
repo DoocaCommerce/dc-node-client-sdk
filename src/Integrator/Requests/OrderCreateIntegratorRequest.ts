@@ -10,7 +10,7 @@ export class OrderCreateIntegratorRequest extends OrderCreateRequest {
     }
 
     getUrl(): string {
-        return `/${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.IMPORT}${BaseUriIntegratorEnum.ORDER}`
+        return `/${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.IMPORT}/${BaseUriIntegratorEnum.ORDER}`
     }
 
     getHeaders(): RequestHeaders {
