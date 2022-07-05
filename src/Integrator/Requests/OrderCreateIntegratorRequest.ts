@@ -1,5 +1,4 @@
 import { OrderCreateRequest, OrderCreateRequestParams } from '../../Dooca/Requests/Order'
-import { BaseUriEnum } from '../../Shared/BaseUriEnum'
 import { BaseUriIntegratorEnum } from '../Shared/BaseUriIntegratorEnum'
 import { IntegratorDataSource } from '../Shared/IntegratorDataSource'
 
@@ -11,7 +10,7 @@ export class OrderCreateIntegratorRequest extends OrderCreateRequest {
     }
 
     getUrl(): string {
-        return `/${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.IMPORT}${BaseUriEnum.ORDERS}`
+        return `/${BaseUriIntegratorEnum.INTEGRATOR}/${BaseUriIntegratorEnum.IMPORT}${BaseUriIntegratorEnum.ORDER}`
     }
 
     getHeaders(): RequestHeaders {
