@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 export { DoocaClient, DoocaClientConfig } from './Dooca'
 
 export { Request, RequestPayload } from './Base'
