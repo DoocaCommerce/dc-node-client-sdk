@@ -36,8 +36,5 @@
     },
     "bundledDependencies": [
         "dc-node-backend"
-    ],
-    "bundleDependencies": [
-        "dc-node-backend"
     ]
 }
