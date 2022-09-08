@@ -14,7 +14,7 @@ export abstract class Request<PARAMS = any> {
     }
 
     setQueryParams(values: PARAMS): Request<PARAMS> {
-        this.query = values
+        this.query = values as any
         return this
     }
 
