@@ -9,11 +9,12 @@ import { HttpMethodEnum } from 'dc-node-backend'
 export interface OrderCreateRequestParams {
     customer_id: number
     external_id?: string
-    note?: string | null
     address: AddressParams
     payment: OrderPaymentParams
     shipping: OrderShippingParams
     items: OrderItemParams[]
+    note?: string | null
+    marketplace?: string | Record<string, any>
 }
 
 export class OrderCreateRequest extends RequestPayload {
