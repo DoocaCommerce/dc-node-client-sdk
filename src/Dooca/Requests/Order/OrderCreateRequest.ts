@@ -13,7 +13,10 @@ export interface OrderCreateRequestParams {
     payment: OrderPaymentParams
     shipping: OrderShippingParams
     items: OrderItemParams[]
+    type?: string
     note?: string | null
+    status?: string
+    fulfillment_status?: string
     marketplace?: string | Record<string, any>
 }
 
