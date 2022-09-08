@@ -17,7 +17,7 @@ export interface OrderCreateRequestParams {
     note?: string | null
     status?: string
     fulfillment_status?: string
-    marketplace?: string | Record<string, any>
+    marketplace?: string
 }
 
 export class OrderCreateRequest extends RequestPayload {
