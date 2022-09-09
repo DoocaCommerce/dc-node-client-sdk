@@ -5,6 +5,7 @@ import { OrderShippingParams } from './OrderShippingParams'
 import { RequestPayload } from '../../../Base/RequestPayload'
 import { AddressParams } from '../../../Shared/AddressParams'
 import { HttpMethodEnum } from 'dc-node-backend'
+import { OrderMarketplaceParams } from './OrderMarketplaceParams'
 
 export interface OrderCreateRequestParams {
     customer_id: number
@@ -17,7 +18,7 @@ export interface OrderCreateRequestParams {
     note?: string | null
     status?: string
     fulfillment_status?: string
-    marketplace?: string
+    marketplace?: OrderMarketplaceParams
 }
 
 export class OrderCreateRequest extends RequestPayload {
