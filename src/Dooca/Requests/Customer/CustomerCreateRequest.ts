@@ -10,6 +10,7 @@ export interface CustomerCreateRequestParams {
     email: string
     birthday: string
     entity: string
+    phone?: string
     password?: string
     address?: AddressParams
 }
