@@ -8,8 +8,8 @@ export interface CustomerCreateRequestParams {
     last_name: string
     cgc: string
     email: string
-    birthday: string
-    entity: string
+    birthday?: string
+    entity?: string
     phone?: string
     password?: string
     address?: AddressParams
