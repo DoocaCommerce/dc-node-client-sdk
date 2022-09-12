@@ -14,7 +14,9 @@ export abstract class Request<PARAMS = any> {
     }
 
     setQueryParams(values: PARAMS): Request<PARAMS> {
-        this.query = values as any
+        for (const key in values) {
+            this.query[key] = values[key]
+        }
         return this
     }
 
