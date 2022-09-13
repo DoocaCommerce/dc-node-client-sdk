@@ -1,16 +1,14 @@
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
-
 import { HttpMethodEnum } from 'dc-node-backend'
-
 import { BaseUrlOrderEnum } from './shared/BaseUrlOrderEnum'
-import { RequestPayload } from '../../../Base'
+import { Request } from '../../../Base'
 
 export interface OrderStatusUpdateRequestParams {
     order_id: string
     status: string
 }
 
-export class OrderStatusUpdateRequest extends RequestPayload {
+export class OrderStatusUpdateRequest extends Request{
     constructor(private params: OrderStatusUpdateRequestParams) {
         super()
     }
@@ -23,7 +21,4 @@ export class OrderStatusUpdateRequest extends RequestPayload {
         return HttpMethodEnum.PUT
     }
 
-    getPayload() {
-        throw new Error('Method not implemented.')
-    }
 }
