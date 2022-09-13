@@ -6,7 +6,7 @@ import { BaseUrlOrderEnum } from './shared/BaseUrlOrderEnum'
 
 export interface OrderStatusUpdateRequestParams {
     order_id: string
-    status: PaymentStatusEnum
+    status: string
 }
 
 export class OrderStatusUpdateRequest extends Request {
