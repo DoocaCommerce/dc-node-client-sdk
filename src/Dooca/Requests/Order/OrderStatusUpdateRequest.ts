@@ -1,7 +1,7 @@
 import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend'
 import { BaseUrlOrderEnum } from './shared/BaseUrlOrderEnum'
-import { Request } from '../../../Base'
+import { Request } from '../../../Base/Request'
 
 export interface OrderStatusUpdateRequestParams {
     order_id: string
