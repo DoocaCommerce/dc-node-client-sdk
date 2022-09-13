@@ -113,6 +113,8 @@ export {
     OrderGetByTokenRequestParams,
     OrderGetOneRequest,
     OrderGetOneRequestParams,
+    OrderStatusUpdateRequest,
+    OrderStatusUpdateRequestParams,
     OrderListRequest,
     OrderListRequestParams,
     OrderUpdateRequest,
