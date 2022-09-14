@@ -104,7 +104,7 @@ export {
     VariationDeleteRequestParams
 } from './Dooca/Requests/Variation'
 
-export { SettingGetRequest } from './Dooca/Requests/Setting'
+export { SettingGetRequest, SettingPutRequest } from './Dooca/Requests/Setting'
 
 export {
     OrderCreateRequest,
