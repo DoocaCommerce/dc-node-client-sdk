@@ -2,13 +2,12 @@ import { BaseUriEnum } from '../../../Shared/BaseUriEnum'
 import { HttpMethodEnum } from 'dc-node-backend/lib/Http/HttpMethodEnum'
 import { RequestPayload } from '../../../Base'
 
-export interface SettingPutRequest {
+export interface SettingPutRequestParams {
     shop_marketplace?: Record<string, any>
 }
 
 export class SettingPutRequest extends RequestPayload {
-   
-    constructor(private params: SettingPutRequest) {
+    constructor(private params: SettingPutRequestParams) {
         super()
     }
 
