@@ -1,4 +1,4 @@
 export enum IntegratorDataSource {
-    APP = 'apps',
+    APP = 'app',
     API = 'api'
 }
