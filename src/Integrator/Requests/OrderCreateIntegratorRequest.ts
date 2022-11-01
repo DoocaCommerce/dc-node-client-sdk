@@ -15,8 +15,7 @@ export class OrderCreateIntegratorRequest extends OrderCreateRequest {
 
     getHeaders(): RequestHeaders {
         return {
-            'dc-action': 'insert',
-            'dc-source': this.source
+            'x-source': this.source
         }
     }
 }
